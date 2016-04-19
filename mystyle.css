@@ -1,6 +1,10 @@
 #video{
     
 }
+.navbar-default {
+    background-color: red;
+    border-color: red;
+}
 .navbar {
       margin-bottom: 0;
       border-radius: 0;
