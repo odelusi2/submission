@@ -1,6 +1,27 @@
-<form action="demo_form.asp" method="get">
-  First name: <input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br>
-  <button type="submit" value="Submit">Submit</button>
-  <button type="reset" value="Reset">Reset</button>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A very simple form</title>
+</head>
+<body>
+<form action="" method="post">
+    <label for="nameId">Name:</label>
+    <br>
+    <input type="text" name="name" id="nameId">
+    <br>
+    <label for="commentsId">Comments:</label>
+    <br>
+    <textarea name="comments" id="commentsId" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit" value="Submit">
 </form>
+
+{% if name %}
+    <p> Your name is: {{ name }}</p>
+    <p>and your comments are: {{ comments }}</p>
+    <p>A big thank you!</p>
+{% endif %}
+
+</body>
+</html>
