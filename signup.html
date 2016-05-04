@@ -98,26 +98,25 @@
 <div class="container text-center">    
   <article> <h3> Raffle </h3>
     <p> Enter your personal details here for a chance to win free VIP tickets for a tour of The Emirates!!!!</p>
-    {% extends 'bootstrap/base.html' %}
-{% import 'bootstrap/wtf.html' as wtf %}
+    <form action="register.html" method="get">
 
-{% block title %}
-    A simple form using SQLite
-{% endblock %}
+First Name:
+<input type="text" name="Fname">
 
-{% block content %}
-    <div class="container">
+Last Name:
+<input type="text" name="Lname">
 
-        <ul class="entries">
-            {% for entry in entries %}
-                <li><h2>{{ entry.name|capitalize }}</h2>{{ entry.comments }}
-            {% endfor %}
-        </ul>
+Email:
+<input type="text" name="Email">
 
+Telephone Number:
+<input type="text" name="Tphone">
 
-    </div>
+  <button type="submit" value="Submit">Submit</button>                      <!-- submit button for the website -->
 
-{% endblock %}
+  <button type="reset" value="Reset">Reset</button>                      <!-- reset button  -->
+
+</form>
         </article>
                      <!-- personal data entered for the raffle -->
 
