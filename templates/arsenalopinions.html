@@ -6,7 +6,7 @@
 
          <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle.css') }}">
         
         <!-- links normal html pages to CSS file -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -29,15 +29,15 @@
             <!-- navigation -->
     <div class "collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="TheEmirates.html">The Emirates</a></li>
-      <li><a href="ArsenalSquad.html">Arsenal Squad</a></li>
-      <li><a href="AboutArseneWenger.html">About Arsene Wenger</a></li> 
-     <li><a href="twitter.html">Twitter</a></li>
+      <li class="active"><a href="/Emirates">The Emirates</a></li>
+      <li><a href="/squad">Arsenal Squad</a></li>
+      <li><a href="/wenger">About Arsene Wenger</a></li> 
+     <li><a href="/twitter">Twitter</a></li>
              <!-- buttons for each page -->
 
       </ul>
        <ul class="nav navbar-nav navbar-right">
-      <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/enternew"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                    <!-- buttons for each page -->
 
     </ul>
@@ -66,7 +66,7 @@
 
 
       <div class="item">
-        <img src="Pictures/Arsenalfan.jpg" alt="Arsenalfans" height="42" width="42">
+        <img src="{{ url_for('static', filename='Pictures/Arsenalfan.jpg') }}" alt="Arsenalfans" height="42" width="42">
         <div class="carousel-caption img-responsive">
           <h3>The Fans</h3>
           <p>Interview</p>
@@ -75,7 +75,7 @@
                    <!-- picture of fans -->
 
        <div class="item">
-        <img src="Pictures/igbo.jpg" alt="Arsnealfanstwo">
+        <img src="{{ url_for('static', filename='Pictures/igbo.jpg') }}" alt="Arsnealfanstwo">
         <div class="carousel-caption">
           <h3>The Fans</h3>
           <p>Interview</p>
